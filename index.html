@@ -5,35 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Larchmont Charter Bicycle Generators Capstone</title>
   <style>
-    
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    
     body {
       font-family: Arial, sans-serif;
-      background: #fff;
+      background: linear-gradient(135deg, #ffffff, #e0ffe0);
       color: #333;
       line-height: 1.6;
       padding-bottom: 40px;
+      transition: background 0.5s ease;
     }
     header {
-      background: #006400; 
+      background: linear-gradient(135deg, #006400, #008000);
       color: #fff;
       padding: 40px 20px;
       text-align: center;
-      animation: fadeInDown 1s ease-out;
     }
     header h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
     }
     nav {
-      background: #008000; 
+      background: linear-gradient(135deg, #008000, #00a000);
       padding: 15px;
-      animation: fadeIn 1s ease-out;
     }
     nav ul {
       list-style: none;
@@ -67,7 +64,10 @@
       border: 0;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      animation: fadeIn 1s ease-out;
+      transition: box-shadow 0.3s ease;
+    }
+    .video-container iframe:hover {
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
     .more-details {
       text-align: center;
@@ -80,21 +80,18 @@
       text-decoration: none;
       font-size: 1.2em;
       border-radius: 4px;
-      transition: background 0.3s ease;
+      transition: background 0.3s ease, transform 0.3s ease;
     }
     .more-details a:hover {
       background: #008000;
     }
     footer {
-      background: #006400;
+      background: linear-gradient(135deg, #006400, #008000);
       color: #fff;
       text-align: center;
       padding: 15px 20px;
       margin-top: 40px;
-      animation: fadeIn 1s ease-out;
     }
-    
-    
     @media (max-width: 768px) {
       .video-container {
         padding: 15px;
@@ -113,19 +110,16 @@
     <h1>Larchmont Charter Bicycle Generators Capstone</h1>
     <p>Renewable Energy in Action</p>
   </header>
-  
+
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="details.html">Project Details</a></li>
       <li><a href="team.html">Team</a></li>
-      
     </ul>
   </nav>
-  
-  
+
   <section class="video-container">
-   
     <iframe src="https://www.youtube.com/embed/VIDEO_ID_OVERVIEW" 
             title="Project Overview Video" allowfullscreen></iframe>
     <iframe src="https://www.youtube.com/embed/VIDEO_ID_ASSEMBLY" 
@@ -133,16 +127,15 @@
     <iframe src="https://www.youtube.com/embed/VIDEO_ID_RESULTS" 
             title="Results Video" allowfullscreen></iframe>
   </section>
-  
-  
+
   <div class="more-details">
     <p>Want more details? Explore the rest of our project:</p>
-    
     <a href="details.html">Project Details</a>
   </div>
-  
+
   <footer>
     <p>2025 Larchmont Charter Capstone 11 S2 Project</p>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
