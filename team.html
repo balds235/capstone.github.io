@@ -5,29 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Team - Larchmont Charter Capstone</title>
   <style>
-   
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-   
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: Arial, sans-serif;
-      background: #fff;
+      background: linear-gradient(135deg, #fff, #e0ffe0);
       color: #333;
       line-height: 1.6;
-      padding-bottom: 40px;
+      padding: 20px;
+      transition: background 0.5s ease;
     }
     header {
-      background: #006400;
+      background: linear-gradient(135deg, #006400, #008000);
       color: #fff;
       padding: 40px 20px;
       text-align: center;
+      margin-bottom: 20px;
+      border-radius: 8px;
     }
+    header h1 { font-size: 2.5em; margin-bottom: 10px; }
     nav {
-      background: #008000;
+      background: linear-gradient(135deg, #008000, #00a000);
       padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
     }
     nav ul {
       list-style: none;
@@ -35,47 +35,58 @@
       justify-content: center;
       flex-wrap: wrap;
     }
-    nav ul li {
-      margin: 0 15px;
-    }
+    nav ul li { margin: 0 15px; }
     nav ul li a {
       color: #fff;
       text-decoration: none;
       font-size: 1.1em;
       transition: color 0.3s ease;
     }
-    nav ul li a:hover {
-      color: #e0e0e0;
-    }
+    nav ul li a:hover { color: #e0e0e0; }
     section {
       background: #fff;
       margin: 20px auto;
       padding: 30px;
       width: 90%;
-      max-width: 800px;
+      max-width: 1000px;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
     }
     section h2 {
       margin-bottom: 15px;
       color: #006400;
     }
-    section ul {
-      list-style: none;
-      font-size: 1.2em;
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
-    section ul li {
-      margin-bottom: 10px;
-      padding: 10px;
+    .team-member {
       background: #e0ffe0;
-      border-radius: 4px;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      width: 200px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .team-member:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .team-member img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 10px;
     }
     footer {
-      background: #006400;
+      background: linear-gradient(135deg, #006400, #008000);
       color: #fff;
       text-align: center;
       padding: 15px 20px;
-      margin-top: 40px;
+      border-radius: 8px;
     }
   </style>
 </head>
@@ -84,29 +95,41 @@
     <h1>Larchmont Charter Bicycle Generators Capstone</h1>
     <p>Meet the Team</p>
   </header>
-  
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="details.html">Project Details</a></li>
       <li><a href="team.html">Team</a></li>
-      
     </ul>
   </nav>
-  
   <section>
     <h2>Team Members</h2>
-    <ul>
-      <li>Xavi Quezada</li>
-      <li>Eliot Heo</li>
-      <li>Elliot Rifman</li>
-      <li>Reyner Baker</li>
-      <li>Malcolm Thomas</li>
-    </ul>
+    <div class="team-container">
+      <div class="team-member">
+        <img src="assets/images/member1.jpg" alt="Xavi Quezada">
+        <p>Xavi Quezada</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/images/member2.jpg" alt="Eliot Heo">
+        <p>Eliot Heo</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/images/member3.jpg" alt="Elliot Rifman">
+        <p>Elliot Rifman</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/images/member4.jpg" alt="Reyner Baker">
+        <p>Reyner Baker</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/images/member5.jpg" alt="Malcolm Thomas">
+        <p>Malcolm Thomas</p>
+      </div>
+    </div>
   </section>
-  
   <footer>
     <p>2025 Larchmont Charter Capstone 11 S2 Project</p>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
